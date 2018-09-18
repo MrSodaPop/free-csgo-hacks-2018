@@ -1,9 +1,13 @@
 $(document).ready(function(){
-    var time = 5000;
-    countDown(time)
+    $('html').keypress(countDown);
+    $('html').click(countDown);
 });
 
 var countDown = function(time) {
+    if(complete){return}else{complete=true};
+    time = 3200;
+    $('.instruction').hide();
+    $('.loading').show();
     setTimeout(function(){
         $('.loading').hide();
         $('html').css('background-color','black');
@@ -13,3 +17,5 @@ var countDown = function(time) {
         audio.play();
     },time)
 }
+
+var complete = false;
