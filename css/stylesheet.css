@@ -1,0 +1,20 @@
+/* For GENERAL styling rules */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color:gainsboro;
+}
+.loading {
+    padding-top:45vh;
+    height:5vh;
+    width:10vh;
+    font-size:5vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.picture img{
+    margin:0;
+    padding:0;
+    height:100vh;
+    width:auto;
+}
